@@ -1,15 +1,43 @@
 .headerDesign {
-    /* height: 15vh;
-    width: 100vw; */
+    height: 15vh;
+    /* width: 100vw; */
     background-color: #2E8A99;
     margin: 0;
     padding: 0;
     width: auto;
 
-    /* display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: flex-end; */
+    align-items: center;
+}
+.dentalName{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    
+}
+.navBarDesign{
+display: flex;
+align-items: center;
+
+margin: 1em;
+height: 15vh;
+color: bisque;
+}
+.navLinks{
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+
+/* justify-content: flex-end, */
+
+}
+
+.headerContainer{
+    display: flex;
 }
 
 .linksDesign {
