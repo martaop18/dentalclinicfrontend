@@ -1,64 +1,32 @@
+
 .headerDesign {
     height: 15vh;
-    /* width: 100vw; */
+    width: 100vw;
     background-color: #2E8A99;
-    margin: 0;
-    padding: 0;
-    width: auto;
-
-    display: flex;
-    flex-direction: row;
-    /* justify-content: flex-end; */
-    align-items: center;
 }
-/* .dentalName{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
 
-    
-}
-.navBarDesign{
-display: flex;
-align-items: center;
-
-margin: 1em;
-height: 15vh;
-color: bisque;
-} */
-.navLinks{
+.navBarLinks{
 display: flex;
 flex-direction: row;
-align-items: flex-start;
+justify-content: space-between;
 align-items: center;
-
-/* justify-content: flex-end, */
-
+margin: 1.5em; 
+margin-left: 0.5em;
 }
 
-/* .headerContainer{
-    display: flex;
-}
-
-.linksDesign {
-    display: flex;
-    flex-direction: row;
-}
-
-.headerLink {
-
-    font-weight: bolder;
-    font-size: large;
-    margin: 0.5em;
-    color: white;
-    transition: 0.5s;
+.navLinks {
+    margin: 0.2em;
     cursor: pointer;
+    transition: 0.2s;
+    font-family:sans-serif;
+    font-size: larger;
+    color: #DAFFFB;
 }
 
-.headerLink:hover {
+.navLinks:hover {
+    transition: 0.2s;
+    font-weight:lighter;
+    color: #FF9EAA;
+}
 
-    transition: 0.5s;
-    color: darkgrey;
 
-} */
