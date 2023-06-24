@@ -8,10 +8,10 @@
 
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     align-items: center;
 }
-.dentalName{
+/* .dentalName{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -26,17 +26,18 @@ align-items: center;
 margin: 1em;
 height: 15vh;
 color: bisque;
-}
+} */
 .navLinks{
 display: flex;
 flex-direction: row;
-align-items: flex-end;
+align-items: flex-start;
+align-items: center;
 
 /* justify-content: flex-end, */
 
 }
 
-.headerContainer{
+/* .headerContainer{
     display: flex;
 }
 
@@ -60,4 +61,4 @@ align-items: flex-end;
     transition: 0.5s;
     color: darkgrey;
 
-}
+} */
