@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Treatments.css";
  
-export const Register = () => {
+export const Treatments = () => {
      return (
          <div className='treatmentsDesign'>Im Treatments</div>
      )
