@@ -1,9 +1,18 @@
 .homeDesign {
 
-    height: 85vh;
+    /* height: 85vh; */
     width: 100vw;
-    background-color: #DAFFFB;
+    background-color:#7FE9DE;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.imagesDesign{
+  
+    margin: 2em;
+    font-family:sans-serif;
+    font-size: larger;
+    color:#fbfcfc;
+   
 }
