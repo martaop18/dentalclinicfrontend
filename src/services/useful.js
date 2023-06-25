@@ -5,7 +5,7 @@ export const checkError = (name, value) => {
         case "email":
         
             if(!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(value)){
-                return "email is wrong";
+                return "Email is wrong";
             }
                 return "";
 
@@ -16,11 +16,15 @@ export const checkError = (name, value) => {
             }
             return "";
 
+         case "name":
+            if (value.length < 2){
+                return "Name must be 6 characters";
+            }
+            return "";
+
         break;
 
         default:
             console.log("Wrong format");
     }
-
-
 }

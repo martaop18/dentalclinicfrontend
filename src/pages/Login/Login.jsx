@@ -38,6 +38,7 @@ const inputHandler = (e) => {
  }
 
  const logMe = () => {
+    
     loginMe(credentials)
       .then((results) => {
         let decodificated = jwt_decode(results.data.token);
