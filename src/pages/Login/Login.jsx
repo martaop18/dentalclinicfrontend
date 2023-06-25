@@ -46,7 +46,7 @@ const inputHandler = (e) => {
   
         setTimeout(() => {
           navigate("/");
-        }, 2500);
+        }, 3500);
   
         setWelcome(`Welcome back, ${decodificated.name}`);
       })
