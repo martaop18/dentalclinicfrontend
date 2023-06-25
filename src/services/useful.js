@@ -14,6 +14,7 @@ export const checkError = (name, value) => {
             if(value.length < 6){
                 return "Password must be 6 characters";
             }
+            return "";
 
         break;
 
