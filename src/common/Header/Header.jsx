@@ -20,7 +20,7 @@ export const Header = ()=>{
 
     <div className="navBarLinks">
       <div className='navLinks' onClick={()=>navigate("/home")}>LIBERTY DC</div>
-      <div className='navLinks' onClick={()=>navigate("/about")}>About Us</div>
+      {/* <div className='navLinks' onClick={()=>navigate("/about")}>About Us</div> */}
       <div className='navLinks' onClick={()=>navigate("/treatments")}>Treatments</div>
       <div className='navLinks' onClick={()=>navigate("/register")}>New Patient</div>
       <div className='navLinks' onClick={()=>navigate("/login")}>Login</div>
