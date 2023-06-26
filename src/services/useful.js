@@ -18,7 +18,13 @@ export const checkError = (name, value) => {
 
          case "name":
             if (value.length < 2){
-                return "Name must be 6 characters";
+                return "Name must be  2 characters";
+            }
+            return "";
+
+        case "lastname":
+            if (value.length < 2){
+                return "Lastname must be 2 characters";
             }
             return "";
 

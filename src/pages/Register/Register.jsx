@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React, { useState } from "react";
 import "./Register.css";
 import { useNavigate } from 'react-router-dom';
 import { registerMe } from '../../services/apiCalls';
@@ -12,12 +11,14 @@ export const Register = () => {
 
     const [credentials, setCredentials] = useState({
         name: "",
+        lastname:"",
         email: "",
         password: ""
       });
     
       const [credentialsError, setCredentialsError] = useState({
         nameError: "",
+        lastnameError:"",
         emailError: "",
         passwordError: ""
       });
@@ -54,8 +55,9 @@ export const Register = () => {
      return (
          <div className='registerDesign'>Im register
          
+        
          <div>
-          <div className="userSubmit">Name and Lastname</div>
+          <div className="userSubmit">Name</div>
           <InputText
             type={"text"}
             design={
@@ -63,12 +65,33 @@ export const Register = () => {
                 ? "normalInputRegister"
                 : "normalInputRegister errorInput"
             }
-            placeholder={"Type your name and lastname"}
+            placeholder={"Type your name"}
             name={"name"}
             functionHandler={inputHandler}
             onBlurFunction={inputCheck}
           />
           <div className="errorTextRegister">{credentialsError.nameError}</div>
+
+          
+         {/* <div>
+          <div className="userSubmit">Lastname</div>
+          <InputText
+            type={"text"}
+            design={
+              credentialsError.lastnameError === ""
+                ? "normalInputRegister"
+                : "normalInputRegister errorInput"  
+            }
+            placeholder={"Type your lastname"}
+            name={"lastname"}
+            functionHandler={inputHandler}
+            onBlurFunction={inputCheck}
+          />
+          <div className="errorTextRegister">{credentialsError.lastnameError}</div>  */}
+
+
+
+
         <div>
         <div className="userSubmit">Email</div>
           <InputText

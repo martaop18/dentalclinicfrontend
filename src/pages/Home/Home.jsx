@@ -13,10 +13,14 @@ export const Home = () => {
         <div className='homeDesign'>
 <div className="imagesDesign">
     <Card>
+    
         <Card.Img variant="top" src={Home1} />
         <Card.Body>
-          <Card.Text>
-            <p>Welcome to LIBERTY Dental Centre, a private dental practice in central London.</p>
+        <Card.Text>
+    Welcome to LIBERTY Dental Centre, a private dental practice in central London.
+           </Card.Text>
+
+          <Card.Text> 
           We are proud to offer services to meet your all dental treatment needs in order to give you the smile you truly deserve.
           </Card.Text>
         </Card.Body>
