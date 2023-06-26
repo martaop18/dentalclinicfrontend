@@ -53,11 +53,10 @@ export const Register = () => {
       };
 
      return (
-         <div className='registerDesign'>Im register
+         <div className='registerDesign'>
          
-        
          <div>
-          <div className="userSubmit">Name</div>
+          <div className="userSubmit"></div>
           <InputText
             type={"text"}
             design={
@@ -65,7 +64,7 @@ export const Register = () => {
                 ? "normalInputRegister"
                 : "normalInputRegister errorInput"
             }
-            placeholder={"Type your name"}
+            placeholder={"Name"}
             name={"name"}
             functionHandler={inputHandler}
             onBlurFunction={inputCheck}
@@ -73,8 +72,8 @@ export const Register = () => {
           <div className="errorTextRegister">{credentialsError.nameError}</div>
 
           
-         {/* <div>
-          <div className="userSubmit">Lastname</div>
+         <div>
+          <div className="userSubmit"></div>
           <InputText
             type={"text"}
             design={
@@ -82,18 +81,18 @@ export const Register = () => {
                 ? "normalInputRegister"
                 : "normalInputRegister errorInput"  
             }
-            placeholder={"Type your lastname"}
+            placeholder={"Lastname"}
             name={"lastname"}
             functionHandler={inputHandler}
             onBlurFunction={inputCheck}
           />
-          <div className="errorTextRegister">{credentialsError.lastnameError}</div>  */}
+          <div className="errorTextRegister">{credentialsError.lastnameError}</div> 
 
 
 
 
         <div>
-        <div className="userSubmit">Email</div>
+        <div className="userSubmit"></div>
           <InputText
             type={"email"}
             design={
@@ -101,7 +100,7 @@ export const Register = () => {
                 ? "normalInputRegister"
                 : "normalInput errorInput"
             }
-            placeholder={"Type your email"}
+            placeholder={"Email"}
             name={"email"}
             functionHandler={inputHandler}
             onBlurFunction={inputCheck}
@@ -110,7 +109,7 @@ export const Register = () => {
 
         </div>
         <div>
-        <div className="userSubmit">Password</div>
+        <div className="userSubmit"></div>
           <InputText
             type={"password"}
             design={
@@ -118,7 +117,7 @@ export const Register = () => {
                 ? "normalInputRegister"
                 : "normalInput errorInput"
             }
-            placeholder={"Type your password"}
+            placeholder={"Password"}
             name={"password"}
             functionHandler={inputHandler}
             onBlurFunction={inputCheck}
@@ -126,8 +125,11 @@ export const Register = () => {
           <div className="errorText">{credentialsError.passwordError}</div>
         </div>
         </div>
+
+
         <div onClick={() => regMe()} className="registerButton">Register</div>
 
+         </div>
          </div>
      )
 }

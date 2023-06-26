@@ -12,8 +12,15 @@ export const Home = () => {
     return (
         <div className='homeDesign'>
 <div className="imagesDesign">
+
+{/* <Container>
+        <Row className="justify-content-center">
+          <Col
+            xs={10}
+            md={6}
+          > */}
+
     <Card>
-    
         <Card.Img variant="top" src={Home1} />
         <Card.Body>
         <Card.Text>
@@ -35,6 +42,10 @@ export const Home = () => {
         </Card.Body>
         <Card.Img variant="top" src={Home2} />
       </Card>
+
+      {/* </Col>
+        </Row>
+      </Container> */}
       </div>
         </div>
     )
