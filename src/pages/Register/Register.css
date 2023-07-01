@@ -4,11 +4,11 @@
     height: 70vh;
     width: 100vw;
     background-color: #EAF6F6;
-    /* font-size: larger; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family:sans-serif;
 }
 
 .registerButton {

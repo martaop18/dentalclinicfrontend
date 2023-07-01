@@ -50,7 +50,7 @@ const inputHandler = (e) => {
           navigate("/");
         }, 3500);
   
-        setWelcome(`Welcome back, ${decodificated.name}`);
+        // setWelcome(`Welcome back, ${decodificated.name}`);
       })
       .catch((error) => console.log(error));
   };
@@ -61,6 +61,7 @@ const inputHandler = (e) => {
         <div>{welcome}</div>
       ) : (
         <div className="userSubmit">
+
           {/* La utilidad de la siguiente linea es renderizar un hook a tiempo real en el DOM */}
           {/* {<pre>{JSON.stringify(credentials, null, 2)}</pre>} */}
 
@@ -80,7 +81,7 @@ const inputHandler = (e) => {
           <InputText
             type={"password"}
             design={
-              credentialsError.passwordError === ""
+              credentialsError.passwordError === "" //OJO CON ESTO ===""
                 ? "normalInput"
                 : "normalInput errorInput"
             }
