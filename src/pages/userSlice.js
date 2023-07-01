@@ -31,6 +31,7 @@ export const userSlice = createSlice({
         },
         data: {
           name: "",
+          id: "",
         },
       };
     },
